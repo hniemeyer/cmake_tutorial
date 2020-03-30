@@ -1,0 +1,1 @@
+add_library(algos STATIC algorithms.cpp)
