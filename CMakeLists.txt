@@ -12,5 +12,6 @@ set(CMAKE_CXX_EXTENSIONS NO)
 #global includes
 include(Common)
 include(StaticAnalyzers)
+include(CompilerOptions)
 
 add_subdirectory(src)
