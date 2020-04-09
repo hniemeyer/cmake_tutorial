@@ -1,0 +1,7 @@
+add_subdirectory(algorithms)
+add_executable(hello main.cpp)
+target_include_directories(hello PRIVATE algorithms)
+target_link_libraries(hello PRIVATE algos)
+add_executable(algotest algorithms_test.cpp)
+target_include_directories(algotest PRIVATE algorithms)
+target_link_libraries(algotest PRIVATE algos)
