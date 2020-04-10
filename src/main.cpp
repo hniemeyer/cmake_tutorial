@@ -1,9 +1,9 @@
-#include <iostream>
 #include "algorithms.hpp"
+#include <fmt/core.h>
 
 int main() {
-    std::cout << "Hello World\n";
+    fmt::print("Hello World");
     const auto result = add(5,6)+mul(3,4);
-    std::cout << result << '\n';
+    fmt::print("The answer is {}.", result);
     return 0;
 }
