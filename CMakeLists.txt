@@ -14,4 +14,12 @@ include(Common)
 include(StaticAnalyzers)
 include(CompilerOptions)
 
+# Set up some extra Conan dependencies based on our needs
+# before loading Conan
+set(CONAN_EXTRA_REQUIRES catch2/2.11.0 fmt/6.0.0)
+set(CONAN_EXTRA_OPTIONS "")
+
+include(Conan)
+run_conan()
+
 add_subdirectory(src)
