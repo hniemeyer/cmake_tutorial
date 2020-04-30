@@ -7,7 +7,7 @@ endif()
 
 
 add_executable(algotest algorithms_test.cpp)
-target_link_libraries(algotest PRIVATE algos CONAN_PKG::catch2)
+target_link_libraries(algotest PRIVATE project_options algos CONAN_PKG::catch2)
 
 catch_discover_tests(
   algotest
