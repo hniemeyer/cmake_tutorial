@@ -17,7 +17,7 @@ target_compile_features(project_options INTERFACE cxx_std_17)
 #global includes
 include(Common)
 include(StaticAnalyzers)
-include(CompilerOptions)
+include(CompilerWarnings)
 
 # Set up some extra Conan dependencies based on our needs
 # before loading Conan
