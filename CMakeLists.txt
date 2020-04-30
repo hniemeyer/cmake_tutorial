@@ -18,6 +18,9 @@ endif()
 include(Common)
 include(StaticAnalyzers)
 include(CompilerWarnings)
+include(Doxygen)
+
+enable_doxygen()
 
 add_library(project_warnings INTERFACE)
 set_project_warnings(project_warnings)
